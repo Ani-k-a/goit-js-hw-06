@@ -11,5 +11,6 @@ const ingList = ingredients.map(el => {
   const heading = document.createElement("li");
   heading.textContent = el;
   heading.className = "item";
-  inglistEl.append(heading);
+  return heading;
 });
+inglistEl.append(...ingList);
